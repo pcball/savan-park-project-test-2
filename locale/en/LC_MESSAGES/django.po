@@ -1,0 +1,160 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-09 11:48+0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+#: parks/models.py:6
+msgid "label"
+msgstr ""
+
+#: parks/models.py:7
+msgid "value"
+msgstr ""
+
+#: parks/models.py:18
+msgid "name"
+msgstr ""
+
+#: parks/models.py:29
+msgid "company name"
+msgstr ""
+
+#: parks/models.py:33
+msgid "description"
+msgstr ""
+
+#: parks/models.py:52
+msgid "title"
+msgstr ""
+
+#: parks/models.py:53
+msgid "summary"
+msgstr ""
+
+#: parks/models.py:54
+msgid "published date"
+msgstr ""
+
+#: parks/templates/parks/base.html:7
+msgid "Savan Park"
+msgstr ""
+
+#: parks/templates/parks/base.html:16
+msgid "Home"
+msgstr ""
+
+#: parks/templates/parks/base.html:17 parks/templates/parks/invest.html:4
+msgid "Invest"
+msgstr ""
+
+#: parks/templates/parks/base.html:18 parks/templates/parks/services.html:4
+#: parks/templates/parks/services.html:9
+msgid "Services"
+msgstr ""
+
+#: parks/templates/parks/base.html:19 parks/templates/parks/home.html:27
+#: parks/templates/parks/tenants.html:4 parks/templates/parks/tenants.html:9
+msgid "Tenants"
+msgstr ""
+
+#: parks/templates/parks/base.html:20 parks/templates/parks/home.html:51
+#: parks/templates/parks/news.html:4 parks/templates/parks/news.html:9
+msgid "News"
+msgstr ""
+
+#: parks/templates/parks/base.html:21 parks/templates/parks/gallery.html:4
+#: parks/templates/parks/gallery.html:9
+msgid "Gallery"
+msgstr ""
+
+#: parks/templates/parks/base.html:22 parks/templates/parks/contact.html:4
+msgid "Contact"
+msgstr ""
+
+#: parks/templates/parks/base.html:35 parks/templates/parks/contact.html:9
+msgid "Contact us"
+msgstr ""
+
+#: parks/templates/parks/base.html:42
+msgid "Savannakhet Special Economic Zone"
+msgstr ""
+
+#: parks/templates/parks/contact.html:10
+msgid "Savannakhet, Lao PDR"
+msgstr ""
+
+#: parks/templates/parks/gallery.html:10
+msgid "Photos of the zone, facilities, and events will appear here."
+msgstr ""
+
+#: parks/templates/parks/home.html:7
+msgid "SAVANNAKHET, LAO PDR"
+msgstr ""
+
+#: parks/templates/parks/home.html:8
+msgid "Savan Park Special Economic Zone"
+msgstr ""
+
+#: parks/templates/parks/home.html:9
+msgid ""
+"A logistics-focused investment zone with direct access to the Savannakhet "
+"Dry Port, connecting Laos to regional and international markets."
+msgstr ""
+
+#: parks/templates/parks/home.html:11 parks/templates/parks/invest.html:9
+msgid "Invest with us"
+msgstr ""
+
+#: parks/templates/parks/home.html:12
+msgid "View tenants"
+msgstr ""
+
+#: parks/templates/parks/home.html:29
+msgid "Leading companies operating here"
+msgstr ""
+
+#: parks/templates/parks/home.html:30 parks/templates/parks/home.html:54
+msgid "View all"
+msgstr ""
+
+#: parks/templates/parks/home.html:43 parks/templates/parks/tenants.html:24
+msgid "No tenants yet."
+msgstr ""
+
+#: parks/templates/parks/home.html:53 parks/templates/parks/news.html:11
+msgid "Latest updates"
+msgstr ""
+
+#: parks/templates/parks/home.html:64 parks/templates/parks/news.html:21
+msgid "No news yet."
+msgstr ""
+
+#: parks/templates/parks/invest.html:10
+msgid ""
+"Learn about land lease terms, incentives, and how to set up your business in "
+"Savan Park."
+msgstr ""
+
+#: parks/templates/parks/services.html:10
+msgid ""
+"Logistics, warehousing, customs facilitation, and utilities support for "
+"companies operating in the zone."
+msgstr ""
+
+#: parks/templates/parks/tenants.html:11
+msgid "All companies operating in Savan Park"
+msgstr ""

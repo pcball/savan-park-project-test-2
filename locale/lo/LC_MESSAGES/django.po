@@ -1,0 +1,156 @@
+#
+msgid ""
+msgstr ""
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-09 11:48+0700\n"
+"Language: lo\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: parks/models.py:6
+msgid "label"
+msgstr "ປ້າຍກຳກັບ"
+
+#: parks/models.py:7
+msgid "value"
+msgstr "ຄ່າ"
+
+#: parks/models.py:18
+msgid "name"
+msgstr "ຊື່"
+
+#: parks/models.py:29
+msgid "company name"
+msgstr "ຊື່ບໍລິສັດ"
+
+#: parks/models.py:33
+msgid "description"
+msgstr "ຄຳອະທິບາຍ"
+
+#: parks/models.py:52
+msgid "title"
+msgstr "ຫົວຂໍ້"
+
+#: parks/models.py:53
+msgid "summary"
+msgstr "ສະຫຼູບ"
+
+#: parks/models.py:54
+msgid "published date"
+msgstr "ວັນທີ່ເຜີຍແຜ່"
+
+#: parks/templates/parks/base.html:7
+msgid "Savan Park"
+msgstr "ຊາວັນ ພາກ"
+
+#: parks/templates/parks/base.html:16
+msgid "Home"
+msgstr "ໜ້າຫຼັກ"
+
+#: parks/templates/parks/base.html:17 parks/templates/parks/invest.html:4
+msgid "Invest"
+msgstr "ລົງທຶນ"
+
+#: parks/templates/parks/base.html:18 parks/templates/parks/services.html:4
+#: parks/templates/parks/services.html:9
+msgid "Services"
+msgstr "ບໍລິການ"
+
+#: parks/templates/parks/base.html:19 parks/templates/parks/home.html:27
+#: parks/templates/parks/tenants.html:4 parks/templates/parks/tenants.html:9
+msgid "Tenants"
+msgstr "ຜູ້ເຊົ່າ"
+
+#: parks/templates/parks/base.html:20 parks/templates/parks/home.html:51
+#: parks/templates/parks/news.html:4 parks/templates/parks/news.html:9
+msgid "News"
+msgstr "ຂ່າວສານ"
+
+#: parks/templates/parks/base.html:21 parks/templates/parks/gallery.html:4
+#: parks/templates/parks/gallery.html:9
+msgid "Gallery"
+msgstr "ຄັງຮູບພາບ"
+
+#: parks/templates/parks/base.html:22 parks/templates/parks/contact.html:4
+msgid "Contact"
+msgstr "ຕິດຕໍ່"
+
+#: parks/templates/parks/base.html:35 parks/templates/parks/contact.html:9
+msgid "Contact us"
+msgstr "ຕິດຕໍ່ພວກເຮົາ"
+
+#: parks/templates/parks/base.html:42
+msgid "Savannakhet Special Economic Zone"
+msgstr "ເຂດເສດຖະກິດພິເສດ ສະຫວັນນະເຂດ"
+
+#: parks/templates/parks/contact.html:10
+msgid "Savannakhet, Lao PDR"
+msgstr "ແຂວງສະຫວັນນະເຂດ, ສປປ ລາວ"
+
+#: parks/templates/parks/gallery.html:10
+msgid "Photos of the zone, facilities, and events will appear here."
+msgstr "ຮູບພາບຂອງເຂດ, ສິ່ງອຳນວຍຄວາມສະດວກ ແລະ ກິດຈະກຳ ຈະສະແດງຢູ່ບ່ອນນີ້."
+
+#: parks/templates/parks/home.html:7
+msgid "SAVANNAKHET, LAO PDR"
+msgstr "ແຂວງສະຫວັນນະເຂດ, ສປປ ລາວ"
+
+#: parks/templates/parks/home.html:8
+msgid "Savan Park Special Economic Zone"
+msgstr "ເຂດເສດຖະກິດພິເສດ ສະຫວັນ ພາກ"
+
+#: parks/templates/parks/home.html:9
+msgid ""
+"A logistics-focused investment zone with direct access to the Savannakhet "
+"Dry Port, connecting Laos to regional and international markets."
+msgstr ""
+"ເຂດການລົງທຶນທີ່ເນັ້ນໜັກທາງດ້ານໂລຈິສຕິກ ໂດຍເຊື່ອມຕໍ່ໂດຍກົງກັບ Savannakhet Dry"
+" Port ເຊື່ອມໂຍງ ສປປ ລາວ ກັບຕະຫຼາດພາກພື້ນ ແລະ ສາກົນ."
+
+#: parks/templates/parks/home.html:11 parks/templates/parks/invest.html:9
+msgid "Invest with us"
+msgstr "ລົງທຶນກັບພວກເຮົາ"
+
+#: parks/templates/parks/home.html:12
+msgid "View tenants"
+msgstr "ເບິ່ງຜູ້ເຊົ່າ"
+
+#: parks/templates/parks/home.html:29
+msgid "Leading companies operating here"
+msgstr "ບໍລິສັດຊັ້ນນຳທີ່ດຳເນີນທຸລະກິດຢູ່ນີ້"
+
+#: parks/templates/parks/home.html:30 parks/templates/parks/home.html:54
+msgid "View all"
+msgstr "ເບິ່ງທັງໝົດ"
+
+#: parks/templates/parks/home.html:43 parks/templates/parks/tenants.html:24
+msgid "No tenants yet."
+msgstr "ຍັງບໍ່ມີຜູ້ເຊົ່າ."
+
+#: parks/templates/parks/home.html:53 parks/templates/parks/news.html:11
+msgid "Latest updates"
+msgstr "ຂ່າວສານຫຼ້າສຸດ"
+
+#: parks/templates/parks/home.html:64 parks/templates/parks/news.html:21
+msgid "No news yet."
+msgstr "ຍັງບໍ່ມີຂ່າວສານ."
+
+#: parks/templates/parks/invest.html:10
+msgid ""
+"Learn about land lease terms, incentives, and how to set up your business in"
+" Savan Park."
+msgstr ""
+"ສຶກສາເງື່ອນໄຂການເຊົ່າທີ່ດິນ, ສິດທິພິເສດ ແລະ ວິທີການເລີ່ມທຸລະກິດຢູ່ Savan "
+"Park."
+
+#: parks/templates/parks/services.html:10
+msgid ""
+"Logistics, warehousing, customs facilitation, and utilities support for "
+"companies operating in the zone."
+msgstr ""
+"ໂລຈິສຕິກ, ສາງເກັບສິນຄ້າ, ອຳນວຍຄວາມສະດວກທາງພາສີ ແລະ ການບໍລິການສາທາລະນຸປະໂພກ "
+"ສຳລັບບໍລິສັດທີ່ດຳເນີນທຸລະກິດຢູ່ໃນເຂດ."
+
+#: parks/templates/parks/tenants.html:11
+msgid "All companies operating in Savan Park"
+msgstr "ບໍລິສັດທັງໝົດທີ່ດຳເນີນທຸລະກິດຢູ່ ຊາວັນ ພາກ"

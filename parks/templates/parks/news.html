@@ -1,0 +1,26 @@
+{% extends "parks/base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "News" %} &mdash; Savan Park{% endblock %}
+
+{% block content %}
+<section class="section">
+    <div class="container">
+        <div class="section-eyebrow">{% trans "News" %}</div>
+        <div class="section-header">
+            <h2>{% trans "Latest updates" %}</h2>
+        </div>
+        <div class="news-grid">
+            {% for item in news %}
+                <div class="news-card">
+                    <time>{{ item.published_date }}</time>
+                    <h3>{{ item.title }}</h3>
+                    <p>{{ item.summary }}</p>
+                </div>
+            {% empty %}
+                <p>{% trans "No news yet." %}</p>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endblock %}

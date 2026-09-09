@@ -1,0 +1,69 @@
+{% extends "parks/base.html" %}
+{% load i18n %}
+
+{% block content %}
+<section class="hero">
+    <div class="container">
+        <div class="eyebrow">{% trans "SAVANNAKHET, LAO PDR" %}</div>
+        <h1>{% trans "Savan Park Special Economic Zone" %}</h1>
+        <p>{% trans "A logistics-focused investment zone with direct access to the Savannakhet Dry Port, connecting Laos to regional and international markets." %}</p>
+        <div class="actions">
+            <a class="btn btn-primary" href="{% url 'parks:invest' %}">{% trans "Invest with us" %} &rarr;</a>
+            <a class="btn btn-outline" href="{% url 'parks:tenants' %}">{% trans "View tenants" %}</a>
+        </div>
+        <div class="stats">
+            {% for stat in stats %}
+                <div>
+                    <div class="stat-value">{{ stat.value }}</div>
+                    <div class="stat-label">{{ stat.label }}</div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="section-eyebrow">{% trans "Tenants" %}</div>
+        <div class="section-header">
+            <h2>{% trans "Leading companies operating here" %}</h2>
+            <a class="view-all" href="{% url 'parks:tenants' %}">{% trans "View all" %} &rarr;</a>
+        </div>
+        <div class="tenant-grid">
+            {% for tenant in tenants %}
+                <div class="tenant-card">
+                    <div class="row">
+                        <div class="tenant-logo" style="background: {{ tenant.logo_color }};">{{ tenant.logo_letter }}</div>
+                        <h3>{{ tenant.name }}</h3>
+                    </div>
+                    <p>{{ tenant.description }}</p>
+                    {% if tenant.category %}<span class="tag">{{ tenant.category.name }}</span>{% endif %}
+                </div>
+            {% empty %}
+                <p>{% trans "No tenants yet." %}</p>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section class="section" style="background: var(--bg-soft);">
+    <div class="container">
+        <div class="section-eyebrow">{% trans "News" %}</div>
+        <div class="section-header">
+            <h2>{% trans "Latest updates" %}</h2>
+            <a class="view-all" href="{% url 'parks:news' %}">{% trans "View all" %} &rarr;</a>
+        </div>
+        <div class="news-grid">
+            {% for item in news %}
+                <div class="news-card">
+                    <time>{{ item.published_date }}</time>
+                    <h3>{{ item.title }}</h3>
+                    <p>{{ item.summary }}</p>
+                </div>
+            {% empty %}
+                <p>{% trans "No news yet." %}</p>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endblock %}

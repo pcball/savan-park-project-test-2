@@ -1,0 +1,45 @@
+{% load i18n static %}
+<!DOCTYPE html>
+<html lang="{{ LANGUAGE_CODE }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% trans "Savan Park" %}{% endblock %}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;700;800&family=Noto+Sans+Lao:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'parks/css/style.css' %}">
+</head>
+<body>
+    <header class="navbar">
+        <a class="logo" href="{% url 'parks:home' %}">SAVAN PARK</a>
+        <nav>
+            <a href="{% url 'parks:home' %}">{% trans "Home" %}</a>
+            <a href="{% url 'parks:invest' %}">{% trans "Invest" %}</a>
+            <a href="{% url 'parks:services' %}">{% trans "Services" %}</a>
+            <a href="{% url 'parks:tenants' %}">{% trans "Tenants" %}</a>
+            <a href="{% url 'parks:news' %}">{% trans "News" %}</a>
+            <a href="{% url 'parks:gallery' %}">{% trans "Gallery" %}</a>
+            <a href="{% url 'parks:contact' %}">{% trans "Contact" %}</a>
+        </nav>
+        <div class="navbar-right">
+            <form class="lang-switch" action="{% url 'set_language' %}" method="post">
+                {% csrf_token %}
+                <input name="next" type="hidden" value="{{ request.path }}">
+                {% get_current_language as CURRENT_LANGUAGE %}
+                {% get_available_languages as AVAILABLE_LANGUAGES %}
+                {% for code, name in AVAILABLE_LANGUAGES %}
+                    <button type="submit" name="language" value="{{ code }}"
+                        class="{% if code == CURRENT_LANGUAGE %}active{% endif %}">{{ name }}</button>
+                {% endfor %}
+            </form>
+            <a class="btn btn-primary" href="{% url 'parks:contact' %}">{% trans "Contact us" %}</a>
+        </div>
+    </header>
+
+    {% block content %}{% endblock %}
+
+    <footer class="site-footer">
+        <div class="container">Savan Park &middot; {% trans "Savannakhet Special Economic Zone" %}</div>
+    </footer>
+</body>
+</html>

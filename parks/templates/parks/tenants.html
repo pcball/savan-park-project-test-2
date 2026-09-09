@@ -1,0 +1,29 @@
+{% extends "parks/base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Tenants" %} &mdash; Savan Park{% endblock %}
+
+{% block content %}
+<section class="section">
+    <div class="container">
+        <div class="section-eyebrow">{% trans "Tenants" %}</div>
+        <div class="section-header">
+            <h2>{% trans "All companies operating in Savan Park" %}</h2>
+        </div>
+        <div class="tenant-grid">
+            {% for tenant in tenants %}
+                <div class="tenant-card">
+                    <div class="row">
+                        <div class="tenant-logo" style="background: {{ tenant.logo_color }};">{{ tenant.logo_letter }}</div>
+                        <h3>{{ tenant.name }}</h3>
+                    </div>
+                    <p>{{ tenant.description }}</p>
+                    {% if tenant.category %}<span class="tag">{{ tenant.category.name }}</span>{% endif %}
+                </div>
+            {% empty %}
+                <p>{% trans "No tenants yet." %}</p>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endblock %}
